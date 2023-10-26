@@ -207,7 +207,7 @@ async def end(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
 
 def main() -> None:
-    application = Application.builder().token("6104742729:AAFIveF-9nl5khNyRkEVi7jn-tKMq42QNhI").build()
+    application = Application.builder().token("YOUR_BOT_TOKEN").build()
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", start)],
         states={
